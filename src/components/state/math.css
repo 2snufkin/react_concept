@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    padding: 30px;
+}
+
+/* Style the inputs */
+input {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Style the "+" sign */
+p {
+    font-size: 24px;
+    margin: 0 10px;
+}

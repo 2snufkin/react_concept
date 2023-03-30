@@ -1,0 +1,25 @@
+div {
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"], select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+select {
+    width: 150px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+}
