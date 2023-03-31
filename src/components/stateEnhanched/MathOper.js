@@ -1,13 +1,15 @@
 import {useState} from "react";
 import './math_oper.css'
 
-function MathOperations() {
+function MathOperations(props) {
     const [enteredNumbers, setEnteredNumbers] = useState({
         first: 0,
         second: 0,
         operation: '+'
     });
 
+
+    const calString = enteredNumbers.first + enteredNumbers.operation + enteredNumbers.second
     /**
      * handle the change of the number left of the operation
      * @param event
@@ -30,9 +32,11 @@ function MathOperations() {
             operation: prevNumbers.operation
 
         }));
+        props.onCalculate(calculate(calString))
     }
-    // Never use eval()! see the internet. it has a security problem, it's slow etc...
-    const result = eval(enteredNumbers.first + ' ' + enteredNumbers.operation + ' ' + enteredNumbers.second)
+    const calculate = () => {
+
+    }
 
     /**
      * update the math operator
@@ -59,7 +63,7 @@ function MathOperations() {
                 <option value="/">Division (/)</option>
             </select>
 
-            <input type="number" onChange={changeSecondNumberHandler}/> = {result}
+            <input type="number" onChange={changeSecondNumberHandler}/>
         </div>
     );
 }
