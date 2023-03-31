@@ -1,7 +1,9 @@
-function CalculReasult(props){
+function CalculReasult({mathObject}){
+    const mathString = mathObject.first + mathObject.operation + mathObject.second
+    const result = eval(mathString)
     // const result = typeof (props.resultF)
     return(
-        <p> = 3</p>
+        <p> {result}</p>
 
     );
 }
