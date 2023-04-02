@@ -1,0 +1,73 @@
+What is the purpose of the component?
+What data does the component need to receive as input?
+How should the data be structured and formatted?
+Are there any dependencies or external libraries that the component needs to use?
+What should the component render to the screen?
+How should the rendered output be structured and formatted?
+What are the component's default or initial values?
+How should the component handle user interactions, such as clicks or input changes?
+Are there any special considerations or edge cases that need to be handled?
+How should the component behave in response to changes in its input data or state?
+How should the component be tested, and what are the expected results of each test?
+How should the component be documented, including its purpose, inputs, outputs, and usage examples?
+
+Sure, here are some additional questions you can add to your waterproof helping document:
+
+Regarding state:
+
+What data does the component need to store internally as state?
+How should the state be initialized, and how should it change over time?
+Are there any derived state values that should be computed from the existing state?
+How should the state be updated in response to user interactions or changes in the input data?
+Should the component use local state or rely on state management tools such as Redux?
+
+Regarding communication with other components:
+
+Does the component need to communicate with other components in the same hierarchy or with parent components?
+What data or functions need to be passed down to child components as props?
+How should the component handle changes in props passed down from parent components?
+Does the component need to send data or trigger events to parent components?
+How should the component handle events triggered by sibling components?
+
+if parent compoenent
+
+
+What data does the parent component need to pass down to the child component as props?
+How should the parent component handle changes in data that it passes down to the child component?
+Should the parent component handle any events triggered by the child component? If so, how should it respond?
+How should the parent component handle updates to its own state that may affect the child component?
+Are there any performance considerations related to passing data down from the parent component to the child component? If so, how should these be addressed?
+Should the parent component be responsible for managing the state of the child component, or should the child component manage its own state?
+How should the parent component handle rendering the child component, and when should the child component be re-rendered?
+How should the parent component handle events or data received from the child component?
+Should the parent component store any of the child component's data in its own state?
+How should the parent component handle rendering the child component, and what props should it pass to the child component during rendering?
+Is there a need for the parent component to trigger a re-render of the child component?
+Should the parent component be responsible for any of the child component's behavior, such as validation or data formatting?
+Should the parent component be able to access or modify the child component's state directly, or should all interaction be via props and events?
+
+if child component
+What data does the child component need to receive from the parent component as props?
+How should the child component handle changes to the props it receives from the parent component?
+How should the child component handle events or data that need to be sent back to the parent component?
+Should the child component store any of its own state, or should all data be passed down from the parent component?
+How should the child component handle rendering its own content, and what props or state should it use during rendering?
+Is there a need for the child component to trigger a re-render of the parent component?
+Should the child component be responsible for any of its own behavior, such as validation or data formatting?
+Should the child component be able to access or modify its parent component's state directly, or should all interaction be via props and events?
+
+
+
+
+
+Addintinal questions
+What is the purpose of this component? What role will it play in the overall functionality of the application?
+What data does this component need to receive from its parent or from other components?
+What state does this component need to manage internally?
+What events or user interactions should this component be able to respond to?
+What child components will this component render? How will they interact with the parent component?
+Will this component need to communicate with any external APIs or services?
+What props will this component pass down to its child components?
+How can this component be optimized for performance?
+Are there any potential edge cases or error scenarios that should be considered in the design of this component?
+How can this component be made reusable across multiple parts of the application?

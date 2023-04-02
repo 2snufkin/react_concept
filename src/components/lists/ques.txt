@@ -1,0 +1,43 @@
+Solution architecture
+
+ListProduct component
+What is the purpose of the component?to display a list of products
+What data does the component need to receive as input? nothing
+How should the data be structured and formatted? product name and in the same line the proce
+Are there any dependencies or external libraries that the component needs to use? null
+What should the component render to the screen? list of <Product>
+How should the rendered output be structured and formatted? divs with purple background with the product info
+What are the component's default or initial values? a list of 5 product object
+How should the component handle user interactions, such as clicks or input changes? with each click a product is added to the list
+Are there any special considerations or edge cases that need to be handled? when there are no more product display an alert
+How should the component behave in response to changes in its input data or state? there is no input data, if chastatenge
+is made to the state it should display the new
+How should the component be tested, and what are the expected results of each test?
+How should the component be documented, including its purpose, inputs, outputs, and usage examples?
+
+Regarding communication with other components:
+Does the component need to communicate with other components in the same hierarchy or with parent components? with child
+component. it should pass it props
+What data or functions need to be passed down to child components as props?
+data: product object
+function: null
+How should the component handle events triggered by sibling components? null
+
+
+Product component
+What is the purpose of the component?to display one product
+What data does the component need to receive as input? nothing
+How should the data be structured and formatted? product name and in the same line the price, purpule background, 30% of screen size
+Are there any dependencies or external libraries that the component needs to use? null
+What should the component render to the screen? one product
+What are the component's default or initial values? a list of 5 product objectit doesnot have a state
+How should the component handle user interactions, such as clicks or input changes? no user interaction
+Are there any special considerations or edge cases that need to be handled? null
+How should the component behave in response to changes in its input data or state? no state
+How should the component be tested, and what are the expected results of each test?
+How should the component be documented, including its purpose, inputs, outputs, and usage examples?
+
+Regarding communication with other components:
+Does the component need to communicate with other components in the same hierarchy or with parent components? yes, it should get an product object
+as props and display the product title , description and price
+How should the component handle events triggered by sibling components? null
